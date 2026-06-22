@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gunapati Santhosh Reddy - Full Stack Developer & CS Student">
+    <title>Santhosh Reddy · Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- ── NAVIGATION ── -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#home" class="nav-brand">
+                Santhosh Reddy
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home"        class="nav-link">Home</a></li>
+                <li><a href="#about"       class="nav-link">About</a></li>
+                <li><a href="#skills"      class="nav-link">Skills</a></li>
+                <li><a href="#projects"    class="nav-link">Projects</a></li>
+                <li><a href="#education"   class="nav-link">Education</a></li>
+                <li><a href="#contact"     class="nav-link">Contact</a></li>
+                <li>
+                    <a href="mailto:santoshsantutej@gmail.com" class="nav-cta">
+                        Hire Me <i class="fas fa-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ── HERO ── -->
+    <section id="home" class="hero">
+        <!-- Animated grid bg -->
+        <div class="hero-grid" aria-hidden="true"></div>
+        <!-- Floating orbs -->
+        <div class="orb orb-1" aria-hidden="true"></div>
+        <div class="orb orb-2" aria-hidden="true"></div>
+        <div class="orb orb-3" aria-hidden="true"></div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-tag fade-up">
+                    <span class="status-dot"></span> Available for opportunities
+                </div>
+                <h1 class="hero-title fade-up delay-1">
+                    Hi, I'm<br>
+                    <span class="name-highlight">Santhosh Reddy</span>
+                </h1>
+                <p class="hero-role fade-up delay-2">
+                    <span class="role-prefix">&#47;&#47;&nbsp;</span>
+                    <span id="typedRole">Full Stack Developer & CS Student</span>
+                    <span class="cursor-blink">|</span>
+                </p>
+                <p class="hero-description fade-up delay-3">
+                    Computer Science graduate passionate about software development and backend engineering, with hands-on experience in Python, SQL, and full-stack web development. Skilled in building scalable applications and solving real-world problems through clean and efficient code.
+                </p>
+                <div class="hero-actions fade-up delay-4">
+                    <a href="#projects" class="btn btn-primary">
+                        View My Work <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-ghost">
+                        Get In Touch
+                    </a>
+                </div>
+                <div class="hero-socials fade-up delay-5">
+                    <a href="https://github.com/GUNAPATISANTHOSH" target="_blank" class="social-pill" aria-label="GitHub">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/santosh-reddy-b4175931b/" target="_blank" class="social-pill" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="mailto:santoshsantutej@gmail.com" class="social-pill" aria-label="Email">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                </div>
+            </div>
+            <!-- Code window decoration -->
+            <div class="hero-code-window fade-up delay-3" aria-hidden="true">
+                <div class="code-window-bar">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="code-window-title">santhosh.js</span>
+                </div>
+                <div class="code-body">
+<pre><span class="kw">const</span> <span class="fn">developer</span> = {
+  <span class="key">name</span>: <span class="str">"Santhosh Reddy"</span>,
+  <span class="key">role</span>: <span class="str">"Full Stack Developer"</span>,
+  <span class="key">location</span>: <span class="str">"Bangalore, India"</span>,
+  <span class="key">skills</span>: [
+    <span class="str">"Python"</span>, <span class="str">"JavaScript"</span>,
+    <span class="str">"SQL"</span>, <span class="str">"HTML/CSS"</span>,
+  ],
+  <span class="key">status</span>: <span class="str">"Open to Work 🚀"</span>,
+  <span class="fn">greet</span>() {
+    <span class="kw">return</span> <span class="str">"Let's build something!"</span>;
+  }
+};</pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll-hint" aria-hidden="true">
+            <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- ── ABOUT ── -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">A little about me.</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>I am a <strong>B.Tech graduate in Computer Science</strong> with strong foundations in Python, SQL, HTML, CSS, and Bootstrap. I have hands-on experience building full-stack web applications and computer vision projects.</p>
+
+<p>My passion lies in <strong>software development, backend systems, and solving real-world problems through technology</strong>. I enjoy turning complex challenges into clean, efficient, and scalable solutions.</p>
+
+<p>I continuously improve my skills through hands-on projects, problem-solving, and exploring modern technologies to expand my knowledge in software development.</p>
+                    <a href="./Santhosh Resume.pdf" 
+   download="Santhosh_Resume.pdf"
+   class="btn btn-primary"
+   style="margin-top:1.5rem; display:inline-flex; align-items:center; gap:.5rem; text-decoration:none; padding:12px 24px; border-radius:8px; background:#007bff; color:white; font-weight:600;">
+    
+    <i class="fas fa-download"></i> Download Resume
+</a>
+                </div>
+                <div class="about-stats reveal delay-2">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-code"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-num">2+</span>
+                            <span class="stat-label">Years Coding</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-num">2</span>
+                            <span class="stat-label">Projects Built</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-num">8.2</span>
+                            <span class="stat-label">CGPA</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-num">India</span>
+                            <span class="stat-label">Bangalore</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── SKILLS ── -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Technical arsenal.</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="skill-card-icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming</h3>
+                    <div class="skill-pills">
+                        <span class="pill">Python</span>
+                        <span class="pill">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal delay-1">
+                    <div class="skill-card-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Web Technologies</h3>
+                    <div class="skill-pills">
+                        <span class="pill">HTML5</span>
+                        <span class="pill">CSS3</span>
+                        <span class="pill">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal delay-2">
+                    <div class="skill-card-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>Frameworks</h3>
+                    <div class="skill-pills">
+                        <span class="pill">Bootstrap</span>
+                        <!-- <span class="pill">OpenCV</span> -->
+                    </div>
+                </div>
+                <div class="skill-card reveal delay-3">
+                    <div class="skill-card-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Tools</h3>
+                    <div class="skill-pills">
+                        <span class="pill">VS Code</span>
+                        <span class="pill">Git</span>
+                        <span class="pill">GitHub</span>
+                        <span class="pill">MySQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── PROJECTS ── -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Things I've built.</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-card-top">
+                        <div class="project-folder"><i class="fas fa-folder-open"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/GUNAPATISANTHOSH" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">MediTrack</h3>
+                    <p class="project-desc">Designed responsive frontend UI using HTML, CSS, and JavaScript
+Developed backend APIs and business logic using Django
+Integrated MySQL database with Django ORM
+Implemented Create, Read, Update, Delete operations</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                </div>
+                <div class="project-card reveal delay-2">
+                    <div class="project-card-top">
+                        <div class="project-folder"><i class="fas fa-folder-open"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/GUNAPATISANTHOSH" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">E Commerce Website</h3>
+                    <p class="project-desc">Designed frontend UI using HTML, CSS, and JavaScript
+Implemented cart logic and user interactions
+Connected application with MySQL database via XAMPP
+Managed product and user data storage</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">XAMPP</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── EDUCATION ── -->
+    <section id="education" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Academic journey.</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">Sep 2022 – May 2026</span>
+                        <h3>B.Tech in Computer Science</h3>
+                        <h4>Saveetha School of Engineering</h4>
+                        <p>Thandalam, Chennai, India</p>
+                        <div class="timeline-badge">CGPA: 8.2</div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal delay-1">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">2020 – 2022</span>
+                        <h3>Intermediate (MPC)</h3>
+                        <h4>Narayana Jr College</h4>
+                        <p>Kadapa, Andhra Pradesh, India</p>
+                        <div class="timeline-badge">CGPA: 8.1</div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal delay-2">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">2019 – 2020</span>
+                        <h3>Secondary Education (SSC)</h3>
+                        <h4>A.P Model School</h4>
+                        <p>Kadapa, Andhra Pradesh, India</p>
+                        <div class="timeline-badge">96%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Get In Touch.</h2>
+            </div>
+            <div class="contact-content reveal">
+                <p class="contact-description">
+                    I'm currently looking for new opportunities! Whether you have a question or just want to say hi,
+                    I'll try my best to get back to you!
+                </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:santoshsantutej@gmail.com">santoshsantutej@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+919347471912">+91 9347471912</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Kadapa, Andhra Pradesh, India</span>
+                    </div>
+                </div>
+                <div class="contact-buttons">
+                    <a href="mailto:santoshsantutej@gmail.com" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Email Me
+                    </a>
+                    <a href="https://www.linkedin.com/in/santosh-reddy-b4175931b/" target="_blank" class="btn btn-ghost">
+                        <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>&copy; 2025 Gunapati Santhosh Reddy · Built with passion &amp; code.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/GUNAPATISANTHOSH" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/santosh-reddy-b4175931b/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:santoshsantutej@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
